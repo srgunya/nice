@@ -1,0 +1,33 @@
+.menu {
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  overflow: hidden; }
+  .menu li {
+    list-style-type: none; }
+
+.none {
+  display: none !important; }
+
+.open_menu {
+  animation: open .4s ease;
+  width: 100%; }
+
+.close_menu {
+  animation: close .4s ease; }
+
+@keyframes open {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+@keyframes close {
+  0% {
+    width: 100%; }
+  100% {
+    width: 0; } }
+
+/*# sourceMappingURL=menu.css.map */
