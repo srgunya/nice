@@ -1,11 +1,12 @@
 .menu {
   width: 0;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background: red;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 9; }
   .menu li {
     list-style-type: none; }
 
