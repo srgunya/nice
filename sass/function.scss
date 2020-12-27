@@ -1,5 +1,0 @@
-$width: 375px;
-
-@function size($n){
-	@return ($n / $width) * 100vw;
-};

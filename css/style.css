@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Bankir-Retro;
+  src: url(../fonts/Bankir-Retro.woff); }
 * {
   margin: 0;
   padding: 0; }
@@ -9,48 +12,114 @@ body {
   position: relative; }
 
 .strelka {
-  width: 7.4666666667vw;
-  height: 5.6vw;
+  width: 2.4630541872vh;
+  height: 3.5714285714vh;
   position: fixed;
-  bottom: 21.0666666667vw;
-  left: 46.4vw;
+  bottom: 9.7290640394vh;
+  left: 50%;
+  margin-left: -1.2315270936vh;
   z-index: 8; }
 
 .fixed {
   position: fixed; }
 
-.music, .video, .reading, .drinks, .shop, .art, .photo, .clothes, .home {
-  width: 100%;
-  height: 100vh;
-  background: green;
-  position: fixed;
-  bottom: 0;
-  font-size: 21.3333333333vw;
-  text-align: center;
-  line-height: 100vh; }
-
-.video {
-  background: blue; }
-
-.reading {
-  background: pink; }
-
-.home {
-  background: black; }
-
 .opacity0 {
   opacity: 0; }
 
-.anim {
-  animation: slider 11s linear; }
+.music, .video, .reading, .drinks, .shop, .art, .photo, .clothes, .home {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0; }
 
-@keyframes slider {
-  0% {
-    transform-origin: center;
-    transform: scale(1); }
-  100% {
-    transform: scale(1.3); } }
-.music_scroll {
+.music {
+  background: url(../img/back_music.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.video {
+  background: url(../img/back_video.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.reading {
+  background: url(../img/back_read.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.drinks {
+  background: url(../img/back_drinks.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.shop {
+  background: url(../img/back_shop.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.art {
+  background: url(../img/back_home.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.photo {
+  background: url(../img/back_photo.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.clothes {
+  background: url(../img/back_dres.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.home {
+  background: url(../img/back_home.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+  .home .parenek1 {
+    width: 38.3004926108vh;
+    height: 51.8472906404vh;
+    position: absolute;
+    bottom: -2.4630541872vh;
+    right: -12.0689655172vh; }
+  .home .logo {
+    width: 33.3743842365vh;
+    height: 14.9014778325vh;
+    position: fixed;
+    display: block;
+    top: 18.1034482759vh;
+    left: 50%;
+    margin-left: -16.6871921182vh; }
+  .home h1 {
+    font-family: Bankir-Retro;
+    font-size: 2.9556650246vh;
+    font-weight: 400;
+    color: #fff;
+    line-height: 4.7081280788vh;
+    position: fixed;
+    top: 33.7438423645vh;
+    left: 50%;
+    margin-left: -14.4981527094vh; }
+  .home .soc {
+    width: 12.5615763547vh;
+    height: 3.5714285714vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 40.8866995074vh;
+    left: 50%;
+    margin-left: -6.2807881773vh; }
+  .home .hz {
+    width: 3.5714285714vh;
+    height: 3.5714285714vh; }
+  .home .vk {
+    width: 3.5714285714vh;
+    height: 3.5714285714vh; }
+  .home .inst {
+    width: 3.5714285714vh;
+    height: 3.5714285714vh; }
+
+.slide_scroll {
   animation: scroll .4s ease;
   height: 100vh; }
 
@@ -66,10 +135,10 @@ body {
   position: fixed;
   margin: 0;
   padding: 0;
-  top: 18.9333333333vw;
-  left: 5.0666666667vw;
-  width: 8.888vw;
-  height: 7.2vw;
+  top: 8.7438423645vh;
+  right: 7.912vw;
+  width: 4.104679803vh;
+  height: 3.3251231527vh;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -86,7 +155,7 @@ body {
   width: 100%;
   display: block;
   position: absolute;
-  height: 1.3333333333vw;
+  height: 0.6157635468vh;
   background: white; }
 
 .c-hamburger span::before,
@@ -95,15 +164,15 @@ body {
   display: block;
   left: 0;
   width: 100%;
-  height: 1.3333333333vw;
+  height: 0.6157635468vh;
   background-color: #fff;
   content: ""; }
 
 .c-hamburger span::before {
-  top: -2.6666666667vw; }
+  top: -1.2315270936vh; }
 
 .c-hamburger span::after {
-  bottom: -2.6666666667vw; }
+  bottom: -1.2315270936vh; }
 
 .c-hamburger--htx span {
   transition: background 0s 0.3s; }

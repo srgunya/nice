@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.strelka{
+	width: height(20px);
+	height: height(29px);
+	position: fixed;
+	bottom: height(79px);
+	left: 50%;
+	margin-left: height(-10px);
+	z-index: 8;
+	}
+
+.fixed{
+	position: fixed;
+}
+.opacity0{
+	opacity: 0;
+}
+
+.music, .video, .reading, .drinks, .shop, .art, .photo, .clothes, .home{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	bottom: 0;
+}
+.music{
+	background: url(../img/back_music.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.video{
+	background: url(../img/back_video.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.reading{
+	background: url(../img/back_read.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.drinks{
+	background: url(../img/back_drinks.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.shop{
+	background: url(../img/back_shop.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.art{
+	background: url(../img/back_home.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.photo{
+	background: url(../img/back_photo.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.clothes{
+	background: url(../img/back_dres.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+}
+.home{
+	background: url(../img/back_home.png);
+	background-size: width(375px) height(812px);
+	background-repeat: no-repeat;
+	.parenek1{
+		width: height(311px);
+		height: height(421px);
+		position: absolute;
+		bottom: height(-20px);
+		right: height(-98px);
+	}
+	.logo{
+		width: height(271px);
+		height: height(121px);
+		position: fixed;
+		display: block;
+		top: height(147px);
+		left: 50%;
+		margin-left: height(-135.5px);
+	}
+	h1{
+		font-family: Bankir-Retro;
+		font-size: height(24px);
+		font-weight: 400;
+		color: #fff;
+		line-height: height(38.23px);
+		position: fixed;
+		top: height(274px);
+		left: 50%;
+		margin-left: height(-117.725px);
+	}
+	.soc{
+		width: height(102px);
+		height: height(29px);
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		top: height(332px);
+		left: 50%;
+		margin-left: height(-51px);
+	}
+	.hz{
+		width: height(29px);
+		height: height(29px);
+		
+	}
+	.vk{
+		width: height(29px);
+		height: height(29px);
+	}
+	.inst{
+		width: height(29px);
+		height: height(29px);
+	}
+}
+
+.slide_scroll{
+	animation: scroll .4s ease;
+	height: 100vh;
+}
+
+@keyframes scroll{
+	0%{
+		height: 0;
+	}
+	100%{
+		height: 100vh;
+	}
+}
