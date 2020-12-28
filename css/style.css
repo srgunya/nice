@@ -1,7 +1,125 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 @font-face {
   font-family: Bankir-Retro;
   src: url(../fonts/Bankir-Retro.woff); }
+.slide {
+  transition: all ease 2s; }
+  .slide img {
+    position: fixed; }
+  .slide .cont {
+    position: fixed;
+    width: auto;
+    height: auto;
+    left: 3.4482758621vh; }
+    .slide .cont h1 {
+      font-family: 'Montserrat';
+      font-weight: 900;
+      font-style: normal;
+      font-size: 5.9113300493vh;
+      line-height: 7.2056650246vh;
+      color: #fff; }
+    .slide .cont p {
+      font-family: Bankir-Retro;
+      font-weight: 400;
+      font-size: 2.2167487685vh;
+      line-height: 3.5307881773vh;
+      color: #fff;
+      margin-top: 0.7389162562vh; }
+    .slide .cont .vpravo {
+      width: 11.6995073892vh;
+      height: 2.4630541872vh;
+      margin-top: 3.6945812808vh;
+      animation: vpravo 1s infinite linear;
+      animation-direction: alternate; }
+
+.music .fon {
+  background: url(../img/back_music.png); }
+.music img:nth-child(2) {
+  width: 30.6650246305vh;
+  height: 49.7536945813vh;
+  top: 27.2167487685vh;
+  right: -9.8522167488vh;
+  position: absolute; }
+.music .cont {
+  top: 28.3251231527vh;
+  position: absolute; }
+
+.video .fon {
+  background: url(../img/back_video.png); }
+.video img:nth-child(2) {
+  width: 50.4926108374vh;
+  height: 42.9802955665vh;
+  top: 37.9310344828vh;
+  right: -19.9507389163vh; }
+.video .cont {
+  top: 26.354679803vh; }
+
+.reading .fon {
+  background: url(../img/back_read.png); }
+.reading img:nth-child(2) {
+  width: 79.802955665vh;
+  height: 86.5763546798vh;
+  top: 15.39408867vh;
+  right: -42.2413793103vh; }
+.reading .cont {
+  top: 20.8128078818vh; }
+
+.drinks .fon {
+  background: url(../img/back_drinks.png); }
+.drinks img:nth-child(2) {
+  width: 53.2019704433vh;
+  height: 55.4187192118vh;
+  top: 17.4876847291vh;
+  right: -21.0591133005vh; }
+.drinks .cont {
+  top: 30.9113300493vh; }
+
+.shop .fon {
+  background: url(../img/back_shop.png); }
+.shop img:nth-child(2) {
+  width: 53.6945812808vh;
+  height: 49.0147783251vh;
+  top: 34.236453202vh;
+  right: -16.3793103448vh; }
+.shop .cont {
+  top: 20.3201970443vh; }
+
+.art .fon {
+  background: url(../img/back_art.png); }
+.art img:nth-child(2) {
+  width: 68.842364532vh;
+  height: 76.2315270936vh;
+  top: 16.3793103448vh;
+  right: -30.4187192118vh; }
+.art .cont {
+  top: 54.5566502463vh; }
+
+.photo .fon {
+  background: url(../img/back_photo.png); }
+.photo img:nth-child(2) {
+  width: 57.0197044335vh;
+  height: 60.4679802956vh;
+  top: 28.9408866995vh;
+  right: -20.6896551724vh; }
+.photo .cont {
+  top: 21.1822660099vh; }
+
+.clothes .fon {
+  background: url(../img/back_dres.png); }
+.clothes img:nth-child(2) {
+  width: 74.1379310345vh;
+  height: 76.1083743842vh;
+  top: 11.9458128079vh;
+  right: -37.0689655172vh; }
+.clothes .cont {
+  top: 15.6403940887vh; }
+
+@keyframes vpravo {
+  0% {
+    left: 3.9408866995vh; }
+  100% {
+    left: 6.157635468vh; } }
 * {
   margin: 0;
   padding: 0; }
@@ -12,13 +130,15 @@ body {
   position: relative; }
 
 .strelka {
-  width: 2.4630541872vh;
+  width: 3.078817734vh;
   height: 3.5714285714vh;
   position: fixed;
-  bottom: 9.7290640394vh;
+  bottom: 8.3743842365vh;
   left: 50%;
-  margin-left: -1.2315270936vh;
-  z-index: 8; }
+  margin-left: -1.6009852217vh;
+  z-index: 8;
+  animation: strelka 1s infinite linear;
+  animation-direction: alternate-reverse; }
 
 .fixed {
   position: fixed; }
@@ -26,108 +146,74 @@ body {
 .opacity0 {
   opacity: 0; }
 
-.music, .video, .reading, .drinks, .shop, .art, .photo, .clothes, .home {
+.home .fon {
+  background: url(../img/back_home.png); }
+.home .parenek1 {
+  width: 38.3004926108vh;
+  height: 51.8472906404vh;
+  position: absolute;
+  bottom: -2.4630541872vh;
+  right: -12.0689655172vh; }
+.home .logo {
+  width: 33.3743842365vh;
+  height: 14.9014778325vh;
+  position: fixed;
+  top: 18.1034482759vh;
+  left: 50%;
+  margin-left: -16.6871921182vh; }
+.home h1 {
+  font-family: Bankir-Retro;
+  font-size: 2.9556650246vh;
+  font-weight: 400;
+  color: #fff;
+  line-height: 4.7081280788vh;
+  position: fixed;
+  top: 33.7438423645vh;
+  left: 50%;
+  margin-left: -14.4981527094vh; }
+.home .soc {
+  width: 12.5615763547vh;
+  height: 3.5714285714vh;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 40.8866995074vh;
+  left: 50%;
+  margin-left: -6.2807881773vh; }
+  .home .soc img {
+    width: 3.5714285714vh;
+    height: 3.5714285714vh;
+    position: static; }
+
+.slide {
   width: 100%;
   height: 100vh;
   position: fixed;
-  bottom: 0; }
-
-.music {
-  background: url(../img/back_music.png);
+  bottom: 0;
   background-size: 100vw 100vh;
   background-repeat: no-repeat; }
 
-.video {
-  background: url(../img/back_video.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-
-.reading {
-  background: url(../img/back_read.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-
-.drinks {
-  background: url(../img/back_drinks.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-
-.shop {
-  background: url(../img/back_shop.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-
-.art {
-  background: url(../img/back_home.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-
-.photo {
-  background: url(../img/back_photo.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-
-.clothes {
-  background: url(../img/back_dres.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-
-.home {
-  background: url(../img/back_home.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat; }
-  .home .parenek1 {
-    width: 38.3004926108vh;
-    height: 51.8472906404vh;
-    position: absolute;
-    bottom: -2.4630541872vh;
-    right: -12.0689655172vh; }
-  .home .logo {
-    width: 33.3743842365vh;
-    height: 14.9014778325vh;
-    position: fixed;
-    display: block;
-    top: 18.1034482759vh;
-    left: 50%;
-    margin-left: -16.6871921182vh; }
-  .home h1 {
-    font-family: Bankir-Retro;
-    font-size: 2.9556650246vh;
-    font-weight: 400;
-    color: #fff;
-    line-height: 4.7081280788vh;
-    position: fixed;
-    top: 33.7438423645vh;
-    left: 50%;
-    margin-left: -14.4981527094vh; }
-  .home .soc {
-    width: 12.5615763547vh;
-    height: 3.5714285714vh;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 40.8866995074vh;
-    left: 50%;
-    margin-left: -6.2807881773vh; }
-  .home .hz {
-    width: 3.5714285714vh;
-    height: 3.5714285714vh; }
-  .home .vk {
-    width: 3.5714285714vh;
-    height: 3.5714285714vh; }
-  .home .inst {
-    width: 3.5714285714vh;
-    height: 3.5714285714vh; }
-
-.slide_scroll {
-  animation: scroll .4s ease;
-  height: 100vh; }
-
-@keyframes scroll {
+@keyframes strelka {
   0% {
-    height: 0; }
+    bottom: 8.3743842365vh; }
   100% {
-    height: 100vh; } }
+    bottom: 6.157635468vh; } }
+.fon {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  background-size: 100vw 100vh !important;
+  background-repeat: no-repeat !important;
+  animation: reka 30s infinite linear;
+  animation-direction: alternate; }
+
+@keyframes reka {
+  0% {
+    transform-origin: center;
+    transform: scale(1); }
+  100% {
+    transform: scale(2); } }
 .c-hamburger {
   z-index: 10;
   background: none;
@@ -135,8 +221,8 @@ body {
   position: fixed;
   margin: 0;
   padding: 0;
-  top: 8.7438423645vh;
-  right: 7.912vw;
+  top: 8.1280788177vh;
+  right: 3.4482758621vh;
   width: 4.104679803vh;
   height: 3.3251231527vh;
   font-size: 0;
@@ -210,11 +296,34 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background: red;
+  background: url(../img/back_menu.png);
+  background-size: 100vw 100vh !important;
+  background-repeat: no-repeat !important;
   overflow: hidden;
   z-index: 9; }
-  .menu li {
-    list-style-type: none; }
+  .menu .blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(70, 90, 108, 0.88);
+    z-index: 8; }
+  .menu ul {
+    position: absolute;
+    top: 14.7783251232vh;
+    right: 3.6945812808vh;
+    z-index: 9; }
+    .menu ul li {
+      list-style-type: none;
+      font-family: 'Montserrat';
+      font-weight: 900;
+      font-style: normal;
+      font-size: 3.9408866995vh;
+      line-height: 4.8041871921vh;
+      color: #fff;
+      margin-bottom: 3.4482758621vh;
+      text-align: right; }
 
 .none {
   display: none !important; }

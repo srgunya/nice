@@ -4,12 +4,39 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	background: red;
+	background: url(../img/back_menu.png);
+	background-size: width(375px) height(812px)!important;
+	background-repeat: no-repeat!important;
 	overflow: hidden;
 	z-index: 9;
-	li{
-		list-style-type: none;
+	.blur{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: rgba(70, 90, 108, 0.88);
+		z-index: 8;
 	}
+	ul{
+		position: absolute;
+		top: height(120px);
+		right: height(30px);
+		z-index: 9;
+		li{
+			list-style-type: none;
+			font-family: 'Montserrat';
+			font-weight: 900;
+			font-style: normal;
+			font-size: height(32px);
+			line-height: height(39.01px);
+			color: #fff;
+			margin-bottom: height(28px);
+			text-align: right;
+			
+		}
+	}
+
 }
 
 .none{

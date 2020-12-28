@@ -1,28 +1,37 @@
 let strelka = document.querySelector('.strelka');
-let music = document.querySelector('.music');
-
+let blur = document.querySelector('.blur');
 let slide = document.querySelectorAll('.slide');
 let cur = 0;
-let cur2 = 0;
 
 function slider(){
 	for(let i = 0; i < slide.length; i++){
 		slide[i].classList.add('opacity0');
 	}
 		slide[cur].classList.remove('opacity0');
+		if(cur == 0){
+			blur.style= "background: rgba(70, 90, 108, 0.88)"	
+		} else if (cur == 1){
+			blur.style= "background: rgba(133, 72, 27, 0.88)"
+		} else if (cur == 2){
+			blur.style= "background: rgba(47, 47, 74, 0.88)"
+		} else if (cur == 3){
+			blur.style= "background: rgba(97, 43, 30, 0.88)"
+		} else if(cur == 4){
+			blur.style= "background: rgba(51, 86, 30, 0.88)"
+		} else if(cur == 5){
+			blur.style= "background: rgba(41, 57, 59, 0.88)"
+		} else if(cur == 6){
+			blur.style= "background: rgba(70, 90, 108, 0.88)"
+		} else if(cur == 7){
+			blur.style= "background: rgba(64, 31, 36, 0.87)"
+		} else if(cur == 8){
+			blur.style= "background: rgba(82, 73, 30, 0.88)"
+		};
 };
 
-  	strelka.onclick=function(){
-		home.classList.remove('fixed');
-		fx = 3;
-		if(cur2 == 0){
-			music.classList.add('slide_scroll');
-			music.classList.remove('opacity0');
-			setTimeout("home.classList.add('opacity0');", 500);
-			setTimeout("music.classList.remove('slide_scroll');", 500);
-			cur2 = 1;
-		}
+
 	strelka.onclick=function(){
+		fx = 3;
 	if(cur + 1 == slide.length){
 		cur = 0;
 	}
@@ -30,7 +39,6 @@ function slider(){
 		cur++;
 	}
 	slider();
-	};
 	};
 
 function slidertop(){

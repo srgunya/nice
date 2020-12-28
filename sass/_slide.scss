@@ -1,0 +1,158 @@
+.slide{
+	transition: all ease 2s;
+	img{
+		position: fixed;
+	}
+	.cont{
+		position: fixed;
+		width: auto;
+		height: auto;
+		left: height(28px);
+	h1{
+		font-family: 'Montserrat';
+		font-weight: 900;
+		font-style: normal;
+		font-size: height(48px);
+		line-height: height(58.51px);
+		color: #fff;
+	}
+	p{
+		font-family: Bankir-Retro;
+		font-weight: 400;
+		font-size: height(18px);
+		line-height: height(28.67px);
+		color: #fff;
+		margin-top: height(6px);
+	}
+	.vpravo{
+		width: height(95px);
+		height: height(20px);
+		margin-top: height(30px);
+		animation: vpravo 1s infinite linear;
+		animation-direction: alternate;
+	}
+	}
+}
+.music{
+	.fon{
+		background: url(../img/back_music.png);
+	}
+	img:nth-child(2){
+		width: height(249px);
+		height: height(404px);
+		top: height(221px);
+		right: height(-80px);
+		position: absolute;
+	}
+	.cont{
+		top: height(230px);
+		position: absolute;
+	}
+}
+.video{
+	.fon{
+		background: url(../img/back_video.png);
+	}
+	img:nth-child(2){
+		width: height(410px);
+		height: height(349px);
+		top: height(308px);
+		right: height(-162px);
+	}
+	.cont{
+		top: height(214px);
+	}
+}
+.reading{
+	.fon{
+		background: url(../img/back_read.png);
+	}
+	img:nth-child(2){
+		width: height(648px);
+		height: height(703px);
+		top: height(125px);
+		right: height(-343px);
+	}
+	.cont{
+		top: height(169px);
+	}
+}
+.drinks{
+	.fon{
+		background: url(../img/back_drinks.png);
+	}
+	img:nth-child(2){
+		width: height(432px);
+		height: height(450px);
+		top: height(142px);
+		right: height(-171px);
+	}
+	.cont{
+		top: height(251px);
+	}
+}
+.shop{
+	.fon{
+		background: url(../img/back_shop.png);
+	}
+	img:nth-child(2){
+		width: height(436px);
+		height: height(398px);
+		top: height(278px);
+		right: height(-133px);
+	}
+	.cont{
+		top: height(165px);
+	}
+}
+.art{
+	.fon{
+		background: url(../img/back_art.png);
+	}
+	img:nth-child(2){
+		width: height(559px);
+		height: height(619px);
+		top: height(133px);
+		right: height(-247px);
+	}
+	.cont{
+		top: height(443px);
+	}
+}
+.photo{
+	.fon{
+		background: url(../img/back_photo.png);
+	}
+	img:nth-child(2){
+		width: height(463px);
+		height: height(491px);
+		top: height(235px);
+		right: height(-168px);
+	}
+	.cont{
+		top: height(172px);
+	}
+}
+.clothes{
+	.fon{
+		background: url(../img/back_dres.png);
+	}
+	img:nth-child(2){
+		width: height(602px);
+		height: height(618px);
+		top: height(97px);
+		right: height(-301px);
+	}
+	.cont{
+		top: height(127px);
+	}
+}
+
+@keyframes vpravo{
+	0%{
+		left: height(32px);
+	}
+	100%{
+		left: height(50px);
+	}
+}
