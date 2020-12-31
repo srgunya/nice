@@ -12,9 +12,11 @@ var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
 if (xAbs > 20 || yAbs > 20) {
 if (xAbs > yAbs) {
 if (finalPoint.pageX < initialPoint.pageX){
-/*СВАЙП ВЛЕВО*/}
+/*СВАЙП ВЛЕВО*/
+swipe_left();}
 else{
-/*СВАЙП ВПРАВО*/}
+/*СВАЙП ВПРАВО*/
+vlevo.onclick()}
 }
 else {
 if (finalPoint.pageY < initialPoint.pageY){

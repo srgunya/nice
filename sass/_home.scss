@@ -14,7 +14,7 @@ body{
 	bottom: height(68px);
 	left: 50%;
 	margin-left: height(-13px);
-	z-index: 8;
+	z-index: 10;
 	animation: strelka 1s infinite linear;
 	animation-direction: alternate-reverse;
 	}
@@ -24,6 +24,9 @@ body{
 }
 .opacity0{
 	opacity: 0;
+}
+.none{
+	display: none;
 }
 
 .home{

@@ -1,7 +1,6 @@
 let burger = document.querySelector('.c-hamburger');
 let menu = document.querySelector('.menu');
 let home = document.querySelector('.home');
-let fx = 0;
 let a = 0;
 
 
@@ -27,12 +26,5 @@ let a = 0;
 			setTimeout("document.addEventListener('touchend', swipe2);", 1000);
 			}
 			a = 0;
-		};
-		if(fx == 0){
-			home.classList.remove('fixed');
-			fx = 1;
-		} else if(fx == 1){
-			home.classList.add('fixed');
-			fx = 0;
 		};
 	};

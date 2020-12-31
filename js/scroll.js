@@ -6,7 +6,11 @@ let cur = 0;
 function slider(){
 	for(let i = 0; i < slide.length; i++){
 		slide[i].classList.add('opacity0');
+		vpravo[i].style= "z-index: 9";
+		slide[i].style= "z-index: 8"
 	}
+		slide[cur].style= 'z-index: 9';
+		vpravo[cur].style= "z-index: 10";
 		slide[cur].classList.remove('opacity0');
 		if(cur == 0){
 			blur.style= "background: rgba(70, 90, 108, 0.88)"	
@@ -31,7 +35,6 @@ function slider(){
 
 
 	strelka.onclick=function(){
-		fx = 3;
 	if(cur + 1 == slide.length){
 		cur = 0;
 	}
@@ -50,5 +53,3 @@ function slidertop(){
 	}
 	slider();
 }
-
-

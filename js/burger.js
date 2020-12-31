@@ -1,4 +1,4 @@
-(function() {
+(function burg() {
  
   "use strict";
  
