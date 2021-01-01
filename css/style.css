@@ -1,11 +1,29 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+@media (max-height: 811px) {
+  .page .logo {
+    top: 11.0837438424vh !important; } }
+@media (min-height: 652px) and (max-height: 654px) {
+  .page .logo {
+    top: 10.0985221675vh !important; } }
+@media (min-height: 822px) and (max-height: 824px) {
+  .page .logo {
+    top: 10.4679802956vh !important; } }
+@media (min-height: 719px) and (max-height: 721px) {
+  .page .logo {
+    top: 11.9458128079vh !important; } }
+@media (min-width: 768px) {
+  .page .logo {
+    top: 12.1921182266vh !important; } }
+
 @font-face {
   font-family: Bankir-Retro;
   src: url(../fonts/Bankir-Retro.woff); }
 .slide {
-  transition: all ease 1.5s;
-  z-index: 8; }
+  transition: all ease 1s;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden; }
   .slide img {
     position: fixed; }
   .slide .cont {
@@ -35,7 +53,7 @@
       animation-direction: alternate; }
 
 .music .fon {
-  background: url(../img/back_music.png); }
+  background: url(/img/back_music.png); }
 .music img:nth-child(2) {
   width: 30.6650246305vh;
   height: 49.7536945813vh;
@@ -47,7 +65,7 @@
   position: absolute; }
 
 .video .fon {
-  background: url(../img/back_video.png); }
+  background: url(/img/back_video.png); }
 .video img:nth-child(2) {
   width: 50.4926108374vh;
   height: 42.9802955665vh;
@@ -57,7 +75,7 @@
   top: 26.354679803vh; }
 
 .reading .fon {
-  background: url(../img/back_read.png); }
+  background: url(/img/back_read.png); }
 .reading img:nth-child(2) {
   width: 79.802955665vh;
   height: 86.5763546798vh;
@@ -67,7 +85,7 @@
   top: 20.8128078818vh; }
 
 .drinks .fon {
-  background: url(../img/back_drinks.png); }
+  background: url(/img/back_drinks.png); }
 .drinks img:nth-child(2) {
   width: 53.2019704433vh;
   height: 55.4187192118vh;
@@ -77,7 +95,7 @@
   top: 30.9113300493vh; }
 
 .shop .fon {
-  background: url(../img/back_shop.png); }
+  background: url(/img/back_shop.png); }
 .shop img:nth-child(2) {
   width: 53.6945812808vh;
   height: 49.0147783251vh;
@@ -87,7 +105,7 @@
   top: 20.3201970443vh; }
 
 .art .fon {
-  background: url(../img/back_art.png); }
+  background: url(/img/back_art.png); }
 .art img:nth-child(2) {
   width: 68.842364532vh;
   height: 76.2315270936vh;
@@ -97,7 +115,7 @@
   top: 54.5566502463vh; }
 
 .photo .fon {
-  background: url(../img/back_photo.png); }
+  background: url(/img/back_photo.png); }
 .photo img:nth-child(2) {
   width: 57.0197044335vh;
   height: 60.4679802956vh;
@@ -107,7 +125,7 @@
   top: 21.1822660099vh; }
 
 .clothes .fon {
-  background: url(../img/back_dres.png); }
+  background: url(/img/back_dres.png); }
 .clothes img:nth-child(2) {
   width: 74.1379310345vh;
   height: 76.1083743842vh;
@@ -137,9 +155,10 @@ body {
   bottom: 8.3743842365vh;
   left: 50%;
   margin-left: -1.6009852217vh;
-  z-index: 10;
+  z-index: 11;
   animation: strelka 1s infinite linear;
-  animation-direction: alternate-reverse; }
+  animation-direction: alternate-reverse;
+  transition: all ease 1.5s; }
 
 .fixed {
   position: fixed; }
@@ -151,7 +170,7 @@ body {
   display: none; }
 
 .home .fon {
-  background: url(../img/back_home.png); }
+  background: url(/img/back_home.png); }
 .home .parenek1 {
   width: 38.3004926108vh;
   height: 51.8472906404vh;
@@ -193,7 +212,7 @@ body {
   width: 100%;
   height: 100vh;
   position: fixed;
-  bottom: 0;
+  top: 0;
   background-size: 100vw 100vh;
   background-repeat: no-repeat; }
 
@@ -205,10 +224,11 @@ body {
 .fon {
   width: 100%;
   height: 100vh;
+  max-height: 100vh !important;
   position: fixed;
-  bottom: 0;
-  background-size: 100vw 100vh !important;
-  background-repeat: no-repeat !important;
+  top: 0;
+  background-size: cover !important;
+  background-repeat: no-repeat no-repeat !important;
   animation: reka 30s infinite linear;
   animation-direction: alternate; }
 
@@ -219,16 +239,15 @@ body {
   100% {
     transform: scale(2); } }
 .c-hamburger {
-  z-index: 13;
+  z-index: 15;
   background: none;
   display: block;
-  position: fixed;
   margin: 0;
   padding: 0;
-  top: 8.1280788177vh;
-  right: 3.5714285714vh;
+  top: 7.881773399vh;
+  right: 3.6945812808vh;
   width: 4.104679803vh;
-  height: 3.3251231527vh;
+  height: 2.7093596059vh;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -237,6 +256,14 @@ body {
   border: none;
   cursor: pointer;
   transition: background 0.3s; }
+
+.bur1 {
+  position: fixed; }
+
+.bur2 {
+  position: absolute;
+  top: 7.881773399vh;
+  right: 3.6945812808vh; }
 
 .c-hamburger:focus {
   outline: none; }
@@ -304,7 +331,7 @@ body {
   background-size: 100vw 100vh !important;
   background-repeat: no-repeat !important;
   overflow: hidden;
-  z-index: 12; }
+  z-index: 14; }
   .menu .blur {
     position: absolute;
     top: 0;
@@ -349,24 +376,400 @@ body {
     width: 100%; }
   100% {
     width: 0; } }
-.cont_page .page {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  bottom: 0;
-  background: blue;
-  text-align: center;
-  font-size: 60px;
-  z-index: 10; }
-.cont_page .vlevo {
-  width: 2.4630541872vh;
-  height: 3.5714285714vh;
-  position: fixed;
-  top: 7.881773399vh;
-  left: 3.5714285714vh;
-  z-index: 11; }
-.cont_page span {
-  display: block;
-  margin-top: 50%; }
+.cont_page {
+  height: auto; }
+  .cont_page .blur2 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .3; }
+  .cont_page .page {
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    height: auto;
+    padding-bottom: 4.3103448276vh; }
+  .cont_page .vlevo {
+    width: 2.4630541872vh;
+    height: 3.5714285714vh;
+    position: absolute;
+    top: 7.881773399vh;
+    left: 3.6945812808vh;
+    z-index: 13;
+    transition: all ease 1.5s; }
+  .cont_page .logo {
+    width: 10.9333333333vw;
+    height: 4.8vw;
+    position: absolute;
+    top: 10.3448275862vh;
+    z-index: 11;
+    left: 50%;
+    margin-left: -5.6vw; }
+  .cont_page h1 {
+    font-family: Bankir-Retro;
+    font-size: 4.8vw;
+    font-weight: 400;
+    color: #fff;
+    line-height: 4.8426666667vw;
+    position: absolute;
+    top: 7.6354679803vh;
+    left: 50%; }
+  .cont_page .page_music {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .cont_page .page_music .fon {
+      background: url(/img/back_music.png); }
+    .cont_page .page_music h1 {
+      font-size: 5.3333333333vw;
+      line-height: 5.3813333333vw;
+      margin-left: -8.768vw; }
+    .cont_page .page_music h2 {
+      width: 52.5333333333vw;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 9.6vw;
+      line-height: 9.6853333333vw;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      margin-top: 2.6666666667vw; }
+    .cont_page .page_music p {
+      width: 73.8666666667vw;
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 3.7333333333vw;
+      line-height: 4.552vw;
+      color: #fff;
+      opacity: .85;
+      position: relative;
+      margin-top: 1.0666666667vw; }
+    .cont_page .page_music h3 {
+      width: 74.6666666667vw;
+      font-family: 'Montserrat';
+      font-weight: 900;
+      font-size: 19.2vw;
+      line-height: 19.3733333333vw;
+      color: #fff;
+      position: relative;
+      margin-top: 9.6vw; }
+    .cont_page .page_music .hermes {
+      width: 67.2vw;
+      height: 67.2vw;
+      position: relative;
+      margin-top: 31.2vw; }
+  .cont_page .page_video {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center; }
+    .cont_page .page_video .fon {
+      background: url(/img/back_video.png); }
+    .cont_page .page_video h1 {
+      margin-left: -6.368vw; }
+    .cont_page .page_video h2 {
+      width: 79.4666666667vw;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 6.4vw;
+      line-height: 6.4586666667vw;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      margin-top: 31.2vw; }
+    .cont_page .page_video p {
+      width: 84vw;
+      font-family: Bankir-Retro;
+      font-weight: 400;
+      font-size: 3.7333333333vw;
+      line-height: 5.9466666667vw;
+      color: #fff;
+      opacity: .85;
+      position: relative;
+      margin-top: 1.8666666667vw; }
+    .cont_page .page_video iframe {
+      position: relative;
+      width: 77.6vw;
+      height: 42.6666666667vw;
+      z-index: 13;
+      margin-top: 1.8472906404vh; }
+  .cont_page .page_reading .fon {
+    background: url(/img/back_read.png); }
+  .cont_page .page_reading h1 {
+    margin-left: -5.944vw; }
+  .cont_page .page_reading .cont_text {
+    width: 84vw;
+    height: auto;
+    margin-top: 5.6vw;
+    margin-left: 8vw;
+    margin-right: 8vw; }
+    .cont_page .page_reading .cont_text div {
+      display: flex;
+      justify-content: space-between; }
+    .cont_page .page_reading .cont_text h2 {
+      width: auto;
+      height: 6.6666666667vw;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 4.8vw;
+      line-height: 5.8506666667vw;
+      color: #fff;
+      display: flex;
+      position: relative;
+      align-items: flex-end; }
+    .cont_page .page_reading .cont_text span {
+      height: 2.7093596059vh;
+      display: flex;
+      width: auto;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 2.1333333333vw;
+      line-height: 2.6vw;
+      color: #fff;
+      opacity: .81;
+      align-items: flex-end; }
+    .cont_page .page_reading .cont_text p {
+      display: inline-block;
+      width: auto;
+      height: 29.3333333333vw;
+      font-family: Bankir-Retro;
+      font-weight: 400;
+      font-size: 3.7333333333vw;
+      line-height: 5.9466666667vw;
+      color: #fff;
+      right: 0;
+      margin-top: 1.0666666667vw;
+      overflow: hidden;
+      margin-bottom: 2.4vw;
+      position: relative;
+      margin-top: 1.0666666667vw;
+      text-align: justify; }
+    .cont_page .page_reading .cont_text button {
+      display: inline-block;
+      left: 0;
+      background: none;
+      color: #fff;
+      padding: 1.6vw 4.5333333333vw;
+      outline: none;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 3.2vw;
+      line-height: 3.9013333333vw;
+      opacity: .8;
+      border: 1px solid rgba(255, 255, 255, 0.81);
+      z-index: 13 !important;
+      position: relative;
+      margin-top: -1.8666666667vw; }
+  .cont_page .page_reading .max_width {
+    width: auto !important; }
+  .cont_page .page_reading .max_height {
+    height: auto !important; }
+  .cont_page .page_reading .cont_text_first {
+    margin-top: 31.2vw; }
+  .cont_page .page_drinks {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .cont_page .page_drinks .fon {
+      background: url(/img/back_drinks.png); }
+    .cont_page .page_drinks h1 {
+      margin-left: -8.524vw; }
+    .cont_page .page_drinks .slot {
+      position: relative;
+      height: 37.8666666667vw;
+      width: 84vw;
+      padding: 2.6666666667vw 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.56); }
+      .cont_page .page_drinks .slot img {
+        width: 28.2666666667vw;
+        height: 37.8666666667vw; }
+      .cont_page .page_drinks .slot h2 {
+        width: auto;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 3.7333333333vw;
+        line-height: 4.552vw;
+        color: #fff;
+        margin-left: 30.6666666667vw;
+        margin-top: -37.3333333333vw; }
+      .cont_page .page_drinks .slot p {
+        font-family: Bankir-Retro;
+        font-weight: 400;
+        font-size: 3.2vw;
+        line-height: 5.0986666667vw;
+        color: #fff;
+        width: 54.1333333333vw;
+        margin-top: 1.6vw;
+        margin-left: 30.6666666667vw; }
+    .cont_page .page_drinks .slot:nth-child(5) {
+      margin-top: 31.2vw; }
+    .cont_page .page_drinks .slot:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+      padding-bottom: 2.6666666667vw; }
+  .cont_page .page_shop {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .cont_page .page_shop .fon {
+      background: url(/img/back_shop.png); }
+    .cont_page .page_shop h1 {
+      margin-left: -8.6386666667vw; }
+    .cont_page .page_shop .info {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 28vw;
+      align-content: center;
+      width: 84vw; }
+      .cont_page .page_shop .info img {
+        width: 3.2vw;
+        height: 3.2vw;
+        position: relative;
+        margin-right: 0.8vw; }
+      .cont_page .page_shop .info span {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 2.4vw;
+        line-height: 2.9253333333vw;
+        color: #FFC267;
+        opacity: .9; }
+    .cont_page .page_shop .slot_shop:nth-child(6) {
+      margin-top: 1.0666666667vw; }
+    .cont_page .page_shop .slot_shop {
+      width: 84vw;
+      position: relative;
+      padding: 2.6666666667vw 0 0 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.56);
+      margin-top: 2.6666666667vw;
+      height: 37.8666666667vw; }
+      .cont_page .page_shop .slot_shop img {
+        width: 28.2666666667vw;
+        height: 37.8666666667vw; }
+      .cont_page .page_shop .slot_shop .unc {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 2.4vw;
+        line-height: 2.8453333333vw;
+        color: #fff;
+        opacity: .8;
+        position: relative;
+        float: right;
+        top: 8vw;
+        left: -46.4vw;
+        margin-top: 0 !important;
+        margin-left: 0 !important; }
+      .cont_page .page_shop .slot_shop .price {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 3.2vw;
+        line-height: 3.9013333333vw;
+        color: #fff;
+        position: relative;
+        float: right;
+        top: 10.6666666667vw;
+        left: -37.3333333333vw;
+        margin-top: 0 !important;
+        margin-left: 0 !important; }
+    .cont_page .page_shop .slot_shop:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+      padding-bottom: 2.6666666667vw; }
+    .cont_page .page_shop h2 {
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 3.7333333333vw;
+      line-height: 4.552vw;
+      color: #fff;
+      position: relative;
+      margin-left: 30.1333333333vw;
+      margin-top: -38.4vw; }
+    .cont_page .page_shop p {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 3.2vw;
+      line-height: 3.9013333333vw;
+      color: #fff;
+      position: relative;
+      margin-left: 30.1333333333vw;
+      margin-top: 1.3333333333vw; }
+  .cont_page .page_art .fon {
+    background: url(/img/back_art.png); }
+  .cont_page .page_art h1 {
+    margin-left: -10.24vw; }
+  .cont_page .page_photo .fon {
+    background: url(/img/back_photo.png); }
+  .cont_page .page_photo h1 {
+    margin-left: -5.4213333333vw; }
+  .cont_page .page_photo .photo_block img {
+    position: relative; }
+  .cont_page .page_photo .photo_block img:first-child {
+    margin-top: 34.1333333333vw !important; }
+  .cont_page .page_photo .photo_block img:nth-child(5n+1) {
+    width: 84vw;
+    height: 56vw;
+    margin-left: 8vw;
+    margin-top: 5.3333333333vw; }
+  .cont_page .page_photo .photo_block img:nth-child(5n+2) {
+    width: 50.4vw;
+    height: 33.6vw;
+    margin-top: 5.3333333333vw;
+    margin-left: 8vw; }
+  .cont_page .page_photo .photo_block img:nth-child(5n+3) {
+    width: 50.4vw;
+    height: 71.2vw;
+    margin-top: 5.3333333333vw;
+    margin-left: 8vw; }
+  .cont_page .page_photo .photo_block img:nth-child(5n+4) {
+    width: 28.2666666667vw;
+    height: 47.7333333333vw;
+    float: right;
+    margin-right: 8vw;
+    margin-top: -34.9333333333vw; }
+  .cont_page .page_photo .photo_block img:nth-child(5n+5) {
+    width: 28.2666666667vw;
+    height: 42.1333333333vw;
+    float: right;
+    margin-right: 8vw;
+    margin-top: -59.2vw; }
+  .cont_page .page_clothes .fon {
+    background: url(/img/back_dres.png); }
+  .cont_page .page_clothes h1 {
+    margin-left: -8.192vw; }
+  .cont_page .page_clothes .dres_block img {
+    position: relative; }
+  .cont_page .page_clothes .dres_block img:first-child {
+    margin-top: 34.1333333333vw !important; }
+  .cont_page .page_clothes .dres_block img:nth-child(2) {
+    margin-top: 34.1333333333vw !important; }
+  .cont_page .page_clothes .dres_block img:nth-child(4n+1) {
+    width: 50.4vw;
+    height: 75.4666666667vw;
+    margin-left: 8vw;
+    margin-top: 5.3333333333vw; }
+  .cont_page .page_clothes .dres_block img:nth-child(4n+2) {
+    width: 28.2666666667vw;
+    height: 29.8666666667vw;
+    float: right;
+    margin-top: 5.3333333333vw;
+    margin-right: 8vw; }
+  .cont_page .page_clothes .dres_block img:nth-child(4n+3) {
+    width: 28.2666666667vw;
+    height: 40.2666666667vw;
+    float: right;
+    margin-top: -41.3333333333vw;
+    margin-right: 8vw; }
+  .cont_page .page_clothes .dres_block img:nth-child(4n+4) {
+    width: 84vw;
+    height: 105.3333333333vw;
+    margin-left: 8vw;
+    margin-top: 5.3333333333vw; }
+  .cont_page .max_page {
+    max-height: inherit;
+    overflow: inherit; }
+  .cont_page .min_page {
+    max-height: 100vh;
+    overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
