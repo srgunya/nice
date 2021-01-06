@@ -24,3 +24,21 @@
        top: height(99px)!important;
   	 }
 		}}
+
+
+	.landscape{
+		top: 0;
+		left: 0;
+		position: fixed;
+		background: url(../img/fon/back_home.png);
+		background-size: cover;
+		background-repeat: no-repeat no-repeat;
+		width: 100%;
+		height: 100vh;
+		z-index: 100000000000;
+		color: #fff;
+		text-align: center;
+		font-family: 'Montserrat';
+		font-size: height(90px);
+		padding-top: height(270px);
+	}

@@ -1,17 +1,30 @@
 let strelka = document.querySelector('.strelka');
 let blur = document.querySelector('.blur');
 let slide = document.querySelectorAll('.slide');
-let cur = +localStorage.getItem('cur');
+let cur = +sessionStorage.getItem('cur');
 let cur2 = 0;
 
 function slider(){
 	for(let i = 0; i < slide.length; i++){
 		slide[i].classList.add('opacity0');
-		vpravo[i].style= "z-index: 9";
+		
 		slide[i].style= 'z-index: 8';
 	}
+	for(let i = 0; i < vpravo.length; i++){
+		vpravo[i].style= "z-index: 9";
+	}
+		for(let i = 0; i < page.length; i++){
+			page[i].classList.add('none');
+		}
+		if(cur == 0){
+			page[0].classList.remove('none');
+		} else if(cur > 0){
+			page[cur-1].classList.remove('none');
+		}
 		slide[cur].style= 'z-index: 9';
-		vpravo[cur].style= "z-index: 11";
+		if(cur<8){
+			vpravo[cur].style= "z-index: 11";
+		}		
 		slide[cur].classList.remove('opacity0');
 		if(cur == 0){
 			blur.style= "background: rgba(70, 90, 108, 0.88)"
@@ -41,12 +54,10 @@ function slider(){
 			blur.style= "background: rgba(82, 73, 30, 0.88)"
 			cur2 = 7;
 		};
-		localStorage.setItem('slide', slide[cur].data);
-		localStorage.setItem('page', page[cur2].data);
-		localStorage.setItem('cur', cur);
+		sessionStorage.setItem('slide', slide[cur].data);
+		sessionStorage.setItem('page', page[cur2].data);
+		sessionStorage.setItem('cur', cur);
 };
-
-
 	strelka.onclick=function(){
 	if(cur + 1 == slide.length){
 		cur = 0;

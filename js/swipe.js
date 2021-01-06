@@ -13,9 +13,24 @@ if (xAbs > 20 || yAbs > 20) {
 if (xAbs > yAbs) {
 if (finalPoint.pageX < initialPoint.pageX){
 /*СВАЙП ВЛЕВО*/
+	for(let i = 0; i < slide.length; i++){
+		non[i] = getComputedStyle(slide[i]);
+	}
+	if(document.body.className == 'baguetteBox-open'){
+		return false;
+	}
 swipe_left();}
 else{
 /*СВАЙП ВПРАВО*/
+	for(let i = 0; i < page.length; i++){
+		opa[i] = getComputedStyle(page[i]);
+	}
+	if(document.body.className == 'baguetteBox-open'){
+		return false;
+	} else if (opa[0].opacity == 0 && opa[1].opacity == 0 && opa[2].opacity == 0 && opa[3].opacity == 0 && opa[4].opacity == 0 && opa[5].opacity == 0 && opa[6].opacity == 0 && opa[7].opacity == 0){
+		swipe_left();
+		return false;
+	}
 vlevo.onclick()}
 }
 else {
@@ -52,3 +67,15 @@ window.addEventListener('gestureend', function(e) {
 
 document.addEventListener('touchstart', swipe1, false);
 document.addEventListener('touchend', swipe2, false);
+
+let str;
+function proverka(){
+	str = getComputedStyle(strelka);
+	if(str.opacity == 0){
+			return false
+	} else if(str.opacity == 1){
+		document.addEventListener('touchstart', swipe1, false);
+		document.addEventListener('touchend', swipe2, false);
+	}
+}
+let timerId = setInterval(proverka, 1000)

@@ -3,6 +3,7 @@
 	position: fixed;
 	bottom: 0;
 	overflow: hidden;
+	min-height: 100vh;
 	img{
 		position: fixed;
 	}
@@ -38,7 +39,7 @@
 }
 .music{
 	.fon{
-		background: url(/img/back_music.png);
+		background: url(../img/back_music.png);
 	}
 	img:nth-child(2){
 		width: height(249px);
@@ -54,7 +55,7 @@
 }
 .video{
 	.fon{
-		background: url(/img/back_video.png);
+		background: url(../img/back_video.png);
 	}
 	img:nth-child(2){
 		width: height(410px);
@@ -68,7 +69,7 @@
 }
 .reading{
 	.fon{
-		background: url(/img/back_read.png);
+		background: url(../img/back_read.png);
 	}
 	img:nth-child(2){
 		width: height(648px);
@@ -82,7 +83,7 @@
 }
 .drinks{
 	.fon{
-		background: url(/img/back_drinks.png);
+		background: url(../img/back_drinks.png);
 	}
 	img:nth-child(2){
 		width: height(432px);
@@ -96,7 +97,7 @@
 }
 .shop{
 	.fon{
-		background: url(/img/back_shop.png);
+		background: url(../img/back_shop.png);
 	}
 	img:nth-child(2){
 		width: height(436px);
@@ -110,7 +111,7 @@
 }
 .art{
 	.fon{
-		background: url(/img/back_art.png);
+		background: url(../img/back_art.png);
 	}
 	img:nth-child(2){
 		width: height(559px);
@@ -124,7 +125,7 @@
 }
 .photo{
 	.fon{
-		background: url(/img/back_photo.png);
+		background: url(../img/back_photo.png);
 	}
 	img:nth-child(2){
 		width: height(463px);
@@ -138,7 +139,7 @@
 }
 .clothes{
 	.fon{
-		background: url(/img/back_dres.png);
+		background: url(../img/back_dres.png);
 	}
 	img:nth-child(2){
 		width: height(602px);

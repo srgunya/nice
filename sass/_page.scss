@@ -11,6 +11,8 @@
 	}
 	.page{
 	width: 100%;
+	min-height: 100vh;
+	min-height: 100vh;
 	position: absolute;
 	z-index: 8;
 	height: auto;
@@ -50,7 +52,7 @@
 		flex-flow: column nowrap;
 		align-items: center;
 		.fon{
-			background: url(/img/back_music.png);
+			background: url(../img/back_music.png);
 		}
 		h1{
 			font-size: width(20px);
@@ -103,7 +105,7 @@
 		align-items: center;
 		text-align: center;
 		.fon{
-			background: url(/img/back_video.png);
+			background: url(../img/back_video.png);
 		}
 		h1{
 			margin-left: width(-23.88px);
@@ -140,7 +142,7 @@
 	}
 	.page_reading{
 		.fon{
-			background: url(/img/back_read.png);
+			background: url(../img/back_read.png);
 		}
 		h1{
 			margin-left: width(-22.29px);
@@ -149,6 +151,7 @@
 			div{
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 			}
 			width: width(315px);
 			height: auto;
@@ -229,7 +232,7 @@
 		flex-flow: column nowrap;
 		align-items: center;
 		.fon{
-			background: url(/img/back_drinks.png);
+			background: url(../img/back_drinks.png);
 		}
 		h1{
 			margin-left: width(-31.965px);
@@ -240,9 +243,14 @@
 			width: width(315px);
 			padding: width(10px) 0;
 			border-top: 1px solid rgba(255, 255, 255, 0.56);
-			img{
+			a{
+			display: inline-block;
 			width: width(106px);
 			height: width(142px);
+				img{
+					width: width(106px);
+					height: width(142px);
+				}
 			}
 			h2{
 				width: auto; 
@@ -278,7 +286,7 @@
 		flex-flow: column nowrap;
 		align-items: center;
 		.fon{
-			background: url(/img/back_shop.png);
+			background: url(../img/back_shop.png);
 		}
 		h1{
 			margin-left: width(-32.395px);
@@ -315,9 +323,14 @@
 			border-top: 1px solid rgba(255, 255, 255, 0.56);
 			margin-top: width(10px);
 			height: width(142px);
-			img{
+			a{
+				display: inline-block;
 				width: width(106px);
 				height: width(142px);
+				img{
+					width: width(106px);
+					height: width(142px);
+			}
 			}
 			.unc{
 				font-family: 'Montserrat';
@@ -375,7 +388,7 @@
 	}
 	.page_art{
 		.fon{
-			background: url(/img/back_art.png);
+			background: url(../img/back_art.png);
 		}
 		h1{
 			margin-left: width(-38.4px);
@@ -383,7 +396,7 @@
 	}
 	.page_photo{
 		.fon{
-			background: url(/img/back_photo.png);
+			background: url(../img/back_photo.png);
 		}
 		h1{
 			margin-left: width(-20.33px);
@@ -392,85 +405,133 @@
 			img{
 				position: relative;
 			}
-			img:first-child{
+			a{
+				display: inline-block;
+			}
+			a:first-child{
 				margin-top: width(128px)!important;
 			}
-			img:nth-child(5n+1){
+			a:nth-child(5n+1){
 				width: width(315px);
 				height: width(210px);
 				margin-left:  width(30px);
 				margin-top: width(20px);
+				img{
+					width: width(315px);
+					height: width(210px);
+				}
 			}
-			img:nth-child(5n+2){
+			a:nth-child(5n+2){
 				width: width(189px);
 				height: width(126px);
 				margin-top: width(20px);
 				margin-left:  width(30px);
+				img{
+					width: width(189px);
+					height: width(126px);
+				}
 			}
-			img:nth-child(5n+3){
+			a:nth-child(5n+3){
 				width: width(189px);
 				height: width(267px);
 				margin-top: width(20px);
 				margin-left:  width(30px);
+				img{
+					width: width(189px);
+					height: width(267px);
+				}
 			}
-			img:nth-child(5n+4){
+			
+			a:nth-child(5n+4){
 				width: width(106px);
 				height: width(179px);
 				float: right;
 				margin-right:  width(30px);
 				margin-top: width(-131px);
+				img{
+					width: width(106px);
+					height: width(179px);
+				}
 			}
-			img:nth-child(5n+5){
+			a:nth-child(5n+5){
 				width: width(106px);
 				height: width(158px);
 				float: right;
 				margin-right:  width(30px);
 				margin-top: width(-222px);
+				img{
+					width: width(106px);
+					height: width(158px);
+				}
 			}
 		}	
 	}
 	.page_clothes{
 		.fon{
-			background: url(/img/back_dres.png);
+			background: url(../img/back_dres.png);
 		}
 		h1{
 			margin-left: width(-30.72px);
 		}
+		
 		.dres_block{
+			a{
+				display: inline-block;
+			}
 			img{
 				position: relative;
+				width: auto;
+				height: auto;
 			}
-			img:first-child{
+			a:first-child{
 				margin-top: width(128px)!important;
 			}
-			img:nth-child(2){
+			a:nth-child(2){
 				margin-top: width(128px)!important;
 			}
-			img:nth-child(4n+1){
+			a:nth-child(4n+1){
 				width: width(189px);
 				height: width(283px);
 				margin-left:  width(30px);
 				margin-top: width(20px);
+				img{
+						width: width(189px);
+						height: width(283px);
+				}
+				
 			}
-			img:nth-child(4n+2){
+			a:nth-child(4n+2){
 				width: width(106px);
 				height: width(112px);
 				float: right;
 				margin-top: width(20px);
 				margin-right: width(30px);
+				img{
+					width: width(106px);
+					height: width(112px);
+				}
+				
 			}
-			img:nth-child(4n+3){
+			a:nth-child(4n+3){
 				width: width(106px);
 				height: width(151px);
 				float: right;
 				margin-top: width(-155px);
 				margin-right: width(30px);
+				img{
+					width: width(106px);
+					height: width(151px);
+				}
 			}
-			img:nth-child(4n+4){
+			a:nth-child(4n+4){
 				width: width(315px);
 				height: width(395px);
 				margin-left:  width(30px);
 				margin-top: width(20px);
+				img{
+					width: width(315px);
+					height: width(395px);
+				}
 			}
 		}
 	}
